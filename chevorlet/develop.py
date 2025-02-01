@@ -250,3 +250,115 @@ def admin_bookings():
         })
 
     return render_template('admin/bookings.html', bookings=enriched_bookings)
+        return redirect(url_for('admin_login'))
+
+    # Fetch all bookings
+    bookings = list(Booking.collection.find({}))
+
+    # Enrich bookings with car and customer details
+    enriched_bookings = []
+    for booking in bookings:
+        car = Car.get_by_id(booking['car_id'])
+        customer = Customer.get_by_id(booking['customer_id'])
+        enriched_bookings.append({
+            "car_model": car['model'] if car else "Unknown",
+            "customer_name": customer['username'] if customer else "Unknown",
+            "start_date": booking['start_date'],
+            "end_date": booking['end_date'],
+            "total_cost": booking['total_cost'],
+            "status": booking.get('status', 'active')  # Default to active if no status exists
+        })
+
+                return redirect(url_for('admin_login'))
+
+    # Fetch all bookings
+    bookings = list(Booking.collection.find({}))
+
+    # Enrich bookings with car and customer details
+    enriched_bookings = []
+    for booking in bookings:
+        car = Car.get_by_id(booking['car_id'])
+        customer = Customer.get_by_id(booking['customer_id'])
+        enriched_bookings.append({
+            "car_model": car['model'] if car else "Unknown",
+            "customer_name": customer['username'] if customer else "Unknown",
+            "start_date": booking['start_date'],
+            "end_date": booking['end_date'],
+            "total_cost": booking['total_cost'],
+            "status": booking.get('status', 'active')  # Default to active if no status exists
+        })
+
+                return redirect(url_for('admin_login'))
+
+    # Fetch all bookings
+    bookings = list(Booking.collection.find({}))
+
+    # Enrich bookings with car and customer details
+    enriched_bookings = []
+    for booking in bookings:
+        car = Car.get_by_id(booking['car_id'])
+        customer = Customer.get_by_id(booking['customer_id'])
+        enriched_bookings.append({
+            "car_model": car['model'] if car else "Unknown",
+            "customer_name": customer['username'] if customer else "Unknown",
+            "start_date": booking['start_date'],
+            "end_date": booking['end_date'],
+            "total_cost": booking['total_cost'],
+            "status": booking.get('status', 'active')  # Default to active if no status exists
+        })
+
+
+                return redirect(url_for('admin_login'))
+
+    # Fetch all bookings
+    bookings = list(Booking.collection.find({}))
+
+    # Enrich bookings with car and customer details
+    enriched_bookings = []
+    for booking in bookings:
+        car = Car.get_by_id(booking['car_id'])
+        customer = Customer.get_by_id(booking['customer_id'])
+        enriched_bookings.append({
+            "car_model": car['model'] if car else "Unknown",
+            "customer_name": customer['username'] if customer else "Unknown",
+            "start_date": booking['start_date'],
+            "end_date": booking['end_date'],
+            "total_cost": booking['total_cost'],
+            "status": booking.get('status', 'active')  # Default to active if no status exists
+        })        return redirect(url_for('admin_login'))
+
+    # Fetch all bookings
+    bookings = list(Booking.collection.find({}))
+
+    # Enrich bookings with car and customer details
+    enriched_bookings = []
+    for booking in bookings:
+        car = Car.get_by_id(booking['car_id'])
+        customer = Customer.get_by_id(booking['customer_id'])
+        enriched_bookings.append({
+            "car_model": car['model'] if car else "Unknown",
+            "customer_name": customer['username'] if customer else "Unknown",
+            "start_date": booking['start_date'],
+            "end_date": booking['end_date'],
+            "total_cost": booking['total_cost'],
+            "status": booking.get('status', 'active')  # Default to active if no status exists
+        })
+                return redirect(url_for('admin_login'))
+
+    # Fetch all bookings
+    bookings = list(Booking.collection.find({}))
+
+    # Enrich bookings with car and customer details
+    enriched_bookings = []
+    for booking in bookings:
+        car = Car.get_by_id(booking['car_id'])
+        customer = Customer.get_by_id(booking['customer_id'])
+        enriched_bookings.append({
+            "car_model": car['model'] if car else "Unknown",
+            "customer_name": customer['username'] if customer else "Unknown",
+            "start_date": booking['start_date'],
+            "end_date": booking['end_date'],
+            "total_cost": booking['total_cost'],
+            "status": booking.get('status', 'active')  # Default to active if no status exists
+        })
+        
